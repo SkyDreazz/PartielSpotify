@@ -1,3 +1,82 @@
+body {
+  background-color: #141315;
+  color: white;
+}
+
+button{
+  background-color: #00a757;
+}
+
+.recently-played {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 1vw;
+  justify-content: center;
+}
+
+.title{
+  width: 20vw;
+  background-color: #00a757;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 1vw;
+  border-radius: 0.5vw;
+}
+
+.title p{
+  width: 100%;
+  text-align: center;
+}
+
+.title img{
+  width: 5vw;
+  border-top-left-radius: 0.5vw;
+  border-bottom-left-radius: 0.5vw;
+}
+
+
+.main-content{
+  display: flex;
+  flex-direction: row;
+}
+
+.main-content .last-content{
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-content .last-content h2{
+  width: 95%;
+  text-align: left;
+}
+
+.last-content .playlist-container{
+  width: 60vw;
+  display: flex;
+  flex-direction: row;
+  gap: 2vw;
+}
+
+.last-content .playlist {
+  display: flex;
+  width: 40vw;
+  background-color: #00a757;
+}
+
+.last-content .artists {
+  width: 20vw;
+}
+
+.last-content .playlist img{
+  width: 8vw;
+}
+
+
+/* ========================================================================= */
 .App {
   text-align: center;
 }

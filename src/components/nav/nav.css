@@ -1,0 +1,174 @@
+.nav-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 8vw;
+    height: 85vh;
+    background-color: #242424;
+    margin-left: 2vw;
+    position: sticky;
+    z-index: 1;
+    top: 5vw;
+    border-radius: 0.5vw;
+    gap: 1vw;
+    padding-top: 2vw;
+    transition: all 0.3s ease-in-out; /* Animation douce */
+    overflow: hidden;
+}
+
+.nav-content.expanded {
+    width: 30vw;
+    display: flex;
+    flex-direction: column ;
+  }
+
+.nav-content .playlist-thumbnails img{
+    width: 4vw;
+}
+
+.nav-content .head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+}
+.nav-content .playlist-thumbnails {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    align-items: center;
+}
+
+.nav-content .recently-played {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.nav-content .playlist-thumbnails .infos {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.infostitle{
+    background-color: #00a757;
+    font-size: 1vw;
+    width: 90%;
+    border-radius: 0.5vw;
+}
+
+.nav-content .playlist-thumbnails .infos.expanded, .nav-content .recently-played .infos.expanded {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1vw;
+    width: 90%;
+}
+
+.nav-content .head img {
+    width: 1.2vw;
+}
+
+.nav-content .recently-played .infos img{
+    width: 4vw;
+}
+
+.playlist-name {
+    visibility: hidden;
+    position: absolute;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease-in-out;
+}
+
+.playlist-name.show {
+    transform: 0.3s ease-in-out;
+    visibility: visible;
+    position: relative;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.playlist-name.hide {
+    transform: 0.3s ease-in-out;
+    visibility: hidden;
+    position: absolute;
+    opacity: 0;
+    transform: translateY(10px);
+}
+
+.playlistinfos{
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+
+.playlistinfos-container {
+    position: relative;
+    width: 100%;
+    height: 20vh;
+  }
+  
+  .simplebar-scrollbar {
+    width: 0.5vw !important; /* Largeur de la barre de défilement */
+    border-radius: 10px;
+    background-color: #00a757;
+    width: 100%;
+  }
+  
+  .simplebar-track.simplebar-vertical {
+    justify-self: right;
+    margin-left: 1vw;
+  }
+  
+  .simplebar-track.simplebar-horizontal {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+
+/* Modale */
+/* .modal-overlay : la superposition de fond qui s'affiche derrière la modale */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden; /* Initialement invisible */
+  }
+  
+  .modal-content {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    visibility: hidden; /* Initialement invisible */
+  }
+  
+  /* Quand la modale est ouverte, on la rend visible */
+  .modal-enter .modal-overlay, 
+  .modal-enter .modal-content {
+    visibility: visible;
+  }
+  
+  .modal-exit .modal-overlay, 
+  .modal-exit .modal-content {
+    visibility: hidden;
+  }
+  
+
+  
