@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     width: 8vw;
-    height: 85vh;
+    height: 75vh;
     background-color: #242424;
     margin-left: 2vw;
     position: sticky;
@@ -130,45 +130,4 @@
     bottom: 0;
     left: 0;
   }
-
-
-/* Modale */
-/* .modal-overlay : la superposition de fond qui s'affiche derrière la modale */
-.modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    visibility: hidden; /* Initialement invisible */
-  }
-  
-  .modal-content {
-    background: #fff;
-    padding: 2rem;
-    border-radius: 10px;
-    max-width: 500px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    visibility: hidden; /* Initialement invisible */
-  }
-  
-  /* Quand la modale est ouverte, on la rend visible */
-  .modal-enter .modal-overlay, 
-  .modal-enter .modal-content {
-    visibility: visible;
-  }
-  
-  .modal-exit .modal-overlay, 
-  .modal-exit .modal-content {
-    visibility: hidden;
-  }
-  
-
   
